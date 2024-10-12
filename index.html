@@ -1,0 +1,324 @@
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celenis Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: #f8f8f8;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        header img {
+            width: 50px;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        main h2 {
+            font-size: 2em;
+            color: #555;
+            margin-top: 0;
+        }
+        .product-list, .product-gallery, .blog-articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-item, .blog-article {
+            background: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .blog-article img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        .video-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        video {
+            width: 100%; /* Chiều rộng 100% để video lớn hơn */
+            max-width: 800px; /* Kích thước tối đa cho video */
+            height: auto;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <img src="logo3.png" alt="Celenis Logo">
+        <h1>Celenis Jewelry</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#collection">Bộ sưu tập</a></li>
+            <li><a href="#about">Về chúng tôi</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="video-section">
+    <video id="videoPlayer" controls autoplay muted>
+        <source src="video1.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+    </video>
+</div>
+       <main>
+    <section id="products">
+        <h2>Danh mục sản phẩm</h2>
+        <div class="product-list">
+            <div class="product-item">
+<a href="#Bông tai"><h3>Bông tai</h3></a>
+ </figcaption>
+                <p>Vẻ đẹp tinh tế cho đôi tai của bạn.</p>
+            </div>
+            <div class="product-item">
+<a href="#Lắc tay"><h3>Lắc tay</h3></a>
+                <p>Trang sức độc đáo, thể hiện phong cách.</p>
+            </div>
+            <div class="product-item">
+<a href="#Dây chuyền"><h3>Dây chuyền</h3></a>
+                <p>Món quà tôn vinh vẻ đẹp nữ tính.</p>
+            </div>
+            <div class="product-item">
+<a href="#Nhẫn"><h3>Nhẫn</h3></a>
+                <p>Biểu tượng của tình yêu và sự gắn kết.</p>
+            </div>
+        </div>
+    </section>
+    <section id="new-arrivals">
+        <h2 style="margin-top: 40px;">Sản phẩm mới ra mắt</h2> <!-- Chỉnh khoảng cách với phần trên -->
+        <div class="product-gallery">
+            <figure>
+                <img src="Nhẫn Đính Hôn Sapphire.jpg" alt="Nhẫn Đính Hôn Sapphire">
+ <a href="#Nhẫn Đính Hôn Sapphire">Nhẫn Đính Hôn Sapphire - Mẫu thiết kế mới nhất</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="Nhẫn Bạc Ý Đính Đá CZ.jpg" alt="Nhẫn Bạc Ý Đính Đá CZ">
+<a href="#Nhẫn Bạc Ý Đính Đá CZ">Nhẫn Bạc Ý Đính Đá CZ - Độc đáo và tinh tế</a>
+ </figcaption>
+            </figure>
+            <figure>
+                <img src="Bông tai ngọc trai.jpg" alt="Bông tai ngọc trai">
+<a href="#Bông tai ngọc trai">Bông tai ngọc trai - Vẻ đẹp thời thượng</a>
+ </figcaption>
+            </figure>
+            <figure>
+                <img src="Vòng Cổ Dancing Swan.jpg" alt="Vòng Cổ Dancing Swan">
+<a href="#Vòng Cổ Dancing Swan">Vòng Cổ Dancing Swan - Sự lựa chọn hoàn hảo</a>
+ </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="best-sellers">
+        <h2>Sản phẩm bán chạy</h2>
+        <div class="product-gallery">
+            <figure>
+                <img src="lactayco4la.jpg" alt="Lắc tay cỏ 4 lá">
+<a href="#Lắc tay cỏ 4 lá">Lắc tay cỏ 4 lá - Bán chạy nhất</a>
+ </figcaption>
+            </figure>
+            <figure>
+                <img src="Lắc tay đá xanh.jpg" alt="Lắc tay đá xanh">
+<a href="#Lắc tay đá xanh">Lắc tay đá xanh- Được yêu thích</a>
+ </figcaption>
+            </figure>
+            <figure>
+                <img src="Dây truyền trái tim.jpg" alt="Dây truyền trái tim">
+<a href="#Dây truyền trái tim">Dây truyền trái tim - Lựa chọn hàng đầu</a>
+ </figcaption>
+            </figure>
+            <figure>
+                <img src="Dây truyền hình bướm.jpg" alt="Dây truyền bướm">
+<a href="#Dây truyền hình bướm">Dây truyền hình bướm - Xu hướng hiện nay</a>
+ </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-articles">
+            <article class="blog-article">
+                <img src="daytruyenbac.jpg" alt="Dây chuyền bạc">
+                <h3>Dây chuyền bạc – Vẻ đẹp sang trọng và quý phái dành cho bạn</h3>
+                <p>Khám phá sự tinh tế và ý nghĩa đằng sau mỗi mẫu dây chuyền bạc...</p>
+                <a href="#read-more">Đọc thêm</a>
+            </article>
+            <article class="blog-article">
+                <img src="trangsuc.jpg" alt="Trang sức phong cách">
+                <h3>Cách chọn trang sức phù hợp với phong cách thời trang của bạn</h3>
+                <p>Những mẹo hữu ích để bạn kết hợp trang sức với các bộ trang phục...</p>
+                <a href="#read-more">Đọc thêm</a>
+            </article>
+            <article class="blog-article">
+                <img src="daytruyentang.jpg" alt="Dây chuyền tặng người thương">
+                <h3>Lựa chọn dây chuyền cho người thương nên lưu ý điều gì?</h3>
+                <p>Gợi ý những món quà ý nghĩa dành cho người bạn yêu thương...</p>
+                <a href="#read-more">Đọc thêm</a>
+            </article>
+            <article class="blog-article">
+                <img src="lactay.jpg" alt="Ý nghĩa lắc tay">
+                <h3>Tặng lắc tay có ý nghĩa gì?</h3>
+                <p>Hiểu rõ về ý nghĩa và giá trị của việc tặng lắc tay trong tình yêu và tình bạn...</p>
+                <a href="#read-more">Đọc thêm</a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<style>
+main {
+    max-width: 1200px; /* Giới hạn chiều rộng của main */
+    margin: 0 auto; /* Căn giữa nội dung theo chiều ngang */
+    padding: 40px 20px; /* Tạo khoảng cách xung quanh */
+    background-color: #fff; /* Màu nền sáng */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    border-radius: 8px; /* Bo góc */
+}
+
+h2 {
+    text-align: center; /* Căn giữa tiêu đề */
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.product-list, .product-gallery, .blog-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Điều chỉnh số cột */
+    gap: 30px;
+    justify-items: center; /* Căn giữa các mục */
+}
+
+.product-item, .blog-article, .product-gallery figure {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center; /* Căn giữa nội dung */
+    max-width: 100%;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+</style>
+
+       <footer>
+    <div class="footer-content">
+        <p>Celenis Jewelry - Khám phá vẻ đẹp trong từng chi tiết</p>
+        <nav>
+            <ul>
+                <li><a href="#terms">Điều khoản & Điều kiện</a></li>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+        <p>Địa chỉ: 444 Nguyễn Thị Tú, Bình Hưng Hòa B, Bình Tân, TP.HCM</p>
+    </div>
+</footer>
+
+<style>
+footer {
+    background: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-content p, .footer-content nav {
+    margin: 10px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+</style>
+
+
