@@ -256,17 +256,7 @@
                 <img src="Vòng Cổ Dancing Swan.jpg" alt="Vòng Cổ Dancing Swan">
                 <figcaption>Vòng Cổ Dancing Swan - Sự lựa chọn hoàn hảo</figcaption>
             </figure>
-/* Phần Sản phẩm mới ra mắt */
-#new-arrivals {
-    margin-top: 60px; /* Tăng khoảng cách giữa tiêu đề và phần phía trên */
-}
 
-/* Tiêu đề của các section */
-h2 {
-    margin-bottom: 30px;
-    padding-bottom: 10px; /* Thêm khoảng cách nội bộ dưới cho phần tiêu đề */
-    border-bottom: 2px solid #ddd; /* Thêm đường kẻ phía dưới tiêu đề nếu muốn */
-}
         </div>
     </section>
 
