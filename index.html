@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -103,19 +104,38 @@
     <nav>
         <ul>
             <li><a href="#home">Trang chủ</a></li>
-            <li><a href="#collection">Bộ sưu tập</a></li>
-            <li><a href="#about">Về chúng tôi</a></li>
+            <li><a href="#collection">Cửa hàng</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
             <li><a href="#contact">Liên hệ</a></li>
         </ul>
     </nav>
 </header>
 
 <div class="video-section">
-    <video id="videoPlayer" controls autoplay muted>
-        <source src="video1.mp4" type="video/mp4">
+    <video id="videoPlayer" autoplay muted playsinline>
+        <source id="videoSource" src="video1.mp4" type="video/mp4">
         Trình duyệt của bạn không hỗ trợ video.
     </video>
 </div>
+
+<script>
+    var videoPlayer = document.getElementById('videoPlayer');
+    var videoSource = document.getElementById('videoSource');
+    var videos = ['video1.mp4', 'video2.mp4'];
+    var currentVideo = 0;
+
+    videoPlayer.addEventListener('ended', function() {
+        // Chuyển ngay sang video tiếp theo mà không có khoảng dừng
+        currentVideo = (currentVideo + 1) % videos.length;
+        videoSource.src = videos[currentVideo];
+        videoPlayer.load();
+        videoPlayer.play();
+    });
+</script>
+
+</body>
+</html>
+
        <main>
     <section id="products">
         <h2>Danh mục sản phẩm</h2>
@@ -269,15 +289,19 @@ figcaption {
 
        <footer>
     <div class="footer-content">
-        <p>Celenis Jewelry - Khám phá vẻ đẹp trong từng chi tiết</p>
+<footer>
+        <p>Celenis Jewelry</p>
+ <p>Khám phá vẻ đẹp trong từng chi tiết</p>
         <nav>
             <ul>
                 <li><a href="#terms">Điều khoản & Điều kiện</a></li>
-                <li><a href="#about">Giới Thiệu</a></li>
-                <li><a href="#contact">Liên Hệ</a></li>
             </ul>
         </nav>
-        <p>Địa chỉ: 444 Nguyễn Thị Tú, Bình Hưng Hòa B, Bình Tân, TP.HCM</p>
+        <p>Địa chỉ: 97 Man Thiện, P.Hiệp Phú, Quận 9, TP.HCM</p>
+        <p>Hotline: 0283839404</p>
+
+<footer>
+<p>&copy; Copyright 2024 © Celenis Jewelry</p>
     </div>
 </footer>
 
