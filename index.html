@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celenis Jewelry</title>
+    
+    <!-- Thêm favicon logo3.png -->
+    <link rel="icon" href="logo3.png" type="image/png">
+
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -98,7 +102,7 @@
 <body>
 <header>
     <div class="header-content">
-        <img src="logo3.png" alt="Celenis Logo">
+        <img src="logo3.png" alt="Celenis Logo"> <!-- Chèn logo vào header -->
         <h1>Celenis Jewelry</h1>
     </div>
     <nav>
@@ -110,20 +114,17 @@
         </ul>
     </nav>
 </header>
-
 <div class="video-section">
     <video id="videoPlayer" autoplay muted playsinline>
         <source id="videoSource" src="video1.mp4" type="video/mp4">
         Trình duyệt của bạn không hỗ trợ video.
     </video>
 </div>
-
 <script>
     var videoPlayer = document.getElementById('videoPlayer');
     var videoSource = document.getElementById('videoSource');
     var videos = ['video1.mp4', 'video2.mp4'];
     var currentVideo = 0;
-
     videoPlayer.addEventListener('ended', function() {
         // Chuyển ngay sang video tiếp theo mà không có khoảng dừng
         currentVideo = (currentVideo + 1) % videos.length;
@@ -131,31 +132,31 @@
         videoPlayer.load();
         videoPlayer.play();
     });
-</script>
 
+    // Đăng ký service worker
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
 </body>
 </html>
-
-       <main>
+<main>
     <section id="products">
         <h2>Danh mục sản phẩm</h2>
         <div class="product-list">
-            <div class="product-item">
-<a href="#Bông tai"><h3>Bông tai</h3></a>
- </figcaption>
-                <p>Vẻ đẹp tinh tế cho đôi tai của bạn.</p>
+            <div class="product-item"><a href="#Bông tai"><h3>Bông tai</h3></a>
+                <figcaption>Vẻ đẹp tinh tế cho đôi tai của bạn.</figcaption>
             </div>
-            <div class="product-item">
-<a href="#Lắc tay"><h3>Lắc tay</h3></a>
-                <p>Trang sức độc đáo, thể hiện phong cách.</p>
+            <div class="product-item"><a href="#Lắc tay"><h3>Lắc tay</h3></a>
+                <figcaption>Trang sức độc đáo, thể hiện phong cách.</figcaption>
             </div>
-            <div class="product-item">
-<a href="#Dây chuyền"><h3>Dây chuyền</h3></a>
-                <p>Món quà tôn vinh vẻ đẹp nữ tính.</p>
+            <div class="product-item"><a href="#Dây chuyền"><h3>Dây chuyền</h3></a>
+                <figcaption>Món quà tôn vinh vẻ đẹp nữ tính.</figcaption>
             </div>
-            <div class="product-item">
-<a href="#Nhẫn"><h3>Nhẫn</h3></a>
-                <p>Biểu tượng của tình yêu và sự gắn kết.</p>
+            <div class="product-item"><a href="#Nhẫn"><h3>Nhẫn</h3></a>
+                <figcaption>Biểu tượng của tình yêu và sự gắn kết.</figcaption>
             </div>
         </div>
     </section>
@@ -164,27 +165,22 @@
         <div class="product-gallery">
             <figure>
                 <img src="Nhẫn Đính Hôn Sapphire.jpg" alt="Nhẫn Đính Hôn Sapphire">
- <a href="#Nhẫn Đính Hôn Sapphire">Nhẫn Đính Hôn Sapphire - Mẫu thiết kế mới nhất</a>
-                </figcaption>
+                <figcaption><a href="#Nhẫn Đính Hôn Sapphire">Nhẫn Đính Hôn Sapphire - Mẫu thiết kế mới nhất</a></figcaption>
             </figure>
             <figure>
                 <img src="Nhẫn Bạc Ý Đính Đá CZ.jpg" alt="Nhẫn Bạc Ý Đính Đá CZ">
-<a href="#Nhẫn Bạc Ý Đính Đá CZ">Nhẫn Bạc Ý Đính Đá CZ - Độc đáo và tinh tế</a>
- </figcaption>
+                <figcaption><a href="#Nhẫn Bạc Ý Đính Đá CZ">Nhẫn Bạc Ý Đính Đá CZ - Độc đáo và tinh tế</a></figcaption>
             </figure>
             <figure>
                 <img src="Bông tai ngọc trai.jpg" alt="Bông tai ngọc trai">
-<a href="#Bông tai ngọc trai">Bông tai ngọc trai - Vẻ đẹp thời thượng</a>
- </figcaption>
+                <figcaption><a href="#Bông tai ngọc trai">Bông tai ngọc trai - Vẻ đẹp thời thượng</a></figcaption>
             </figure>
             <figure>
                 <img src="Vòng Cổ Dancing Swan.jpg" alt="Vòng Cổ Dancing Swan">
-<a href="#Vòng Cổ Dancing Swan">Vòng Cổ Dancing Swan - Sự lựa chọn hoàn hảo</a>
- </figcaption>
+                <figcaption><a href="#Vòng Cổ Dancing Swan">Vòng Cổ Dancing Swan - Sự lựa chọn hoàn hảo</a></figcaption>
             </figure>
         </div>
     </section>
-
     <section id="best-sellers">
         <h2>Sản phẩm bán chạy</h2>
         <div class="product-gallery">
